@@ -4,16 +4,17 @@ import { MetaTags } from '@redwoodjs/web'
 const HomePage = () => {
   return (
     <>
-      <MetaTags title="Home" description="Home page" />
-
-      <h1>HomePage</h1>
-      <p>
-        Find me in <code>./web/src/pages/HomePage/HomePage.js</code>
-      </p>
-      <p>
-        My default route is named <code>home</code>, link to me with `
-        <Link to={routes.home()}>Home</Link>`
-      </p>
+      <MetaTags
+        title="Tech Jobs Categorized by Interview Process"
+        description="Home page"
+      />
+      <section>
+        <div className="gradient-hero-background w-full h-[100vh] md:max-h-[36rem] px-[7.5rem] pt-[8rem] flex items-center justify-center">
+          <h1 className="max-w-[75rem] font-[Urbanist] font-[600] text-[4.75rem] leading-[5.125rem] text-[#293241] text-center">
+            Find tech companies & jobs by their interview processes
+          </h1>
+        </div>
+      </section>
     </>
   )
 }

@@ -12,6 +12,10 @@
 
  /* Typography */
 
- /**
+/* Misc */
+ .gradient-hero-background {
+   background: radial-gradient(151.87% 247.95% at 100% 0%, rgba(255, 81, 81, 0.3) 0%, rgba(237, 237, 237, 0) 100%), radial-gradient(632.86% 1170.65% at 0% 100%, rgba(255, 164, 27, 0.3) 0%, rgba(237, 237, 237, 0) 100%), #EDEDED;
+ }
+ /*
   * END --- SETUP TAILWINDCSS EDIT
   */
