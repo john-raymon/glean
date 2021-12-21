@@ -1,0 +1,16 @@
+/* Typography */
+.font-large {
+  @apply font-medium text-[1.125rem] font-[Urbanist] leading-[1.75rem];
+}
+
+.font-3xl {
+  @apply font-normal text-[1.875rem] font-[Urbanist] leading-[2.25rem];
+}
+
+.font-3xl-medium {
+  @apply font-medium text-[1.875rem] font-[Urbanist] leading-[2.25rem];
+}
+
+.font-3xl-semibold {
+  @apply font-semibold text-[1.875rem] font-[Urbanist] leading-[2.25rem];
+}

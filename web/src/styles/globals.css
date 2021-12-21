@@ -1,0 +1,12 @@
+/* Globals */
+.gradient-hero-background {
+  background: radial-gradient(151.87% 247.95% at 100% 0%, rgba(255, 81, 81, 0.3) 0%, rgba(237, 237, 237, 0) 100%), radial-gradient(632.86% 1170.65% at 0% 100%, rgba(255, 164, 27, 0.3) 0%, rgba(237, 237, 237, 0) 100%), #ededed00;
+}
+
+.gradient-background-purple {
+  background: linear-gradient(180deg, rgba(152, 24, 214, 0.088) -19.83%, rgba(237, 237, 237, 0.2) 100%), #ededed00;
+}
+
+.gradient-background-yellow {
+  background: linear-gradient(180deg, rgba(255, 164, 27, 0.2) -19.83%, rgba(237, 237, 237, 0.2) 100%), #ededed00;
+}
