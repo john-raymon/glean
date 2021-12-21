@@ -15,7 +15,7 @@ const DefaultLayout = ({ children }) => {
                 className="!bg-[#293241] !text-[1rem] !rounded-[0.875rem] !leading-[1.1875rem] !py-[1rem]"
                 buttonType="secondary"
               >
-                Post your company’s tech. interview process
+                Post your company&apos;s tech. interview process
               </Button>
             </li>
           </ul>

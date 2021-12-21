@@ -11827,10 +11827,9 @@ lite-react-ui@^0.2.6:
     react "^17.0.0"
     react-dom "^17.0.0"
 
-lite-react-ui@^0.3.1:
+"lite-react-ui@git://github.com/john-raymon/lite-react-UI-components.git#05812baef99588c93b4ea98826a35fac7aaa1cc3":
   version "0.3.1"
-  resolved "https://registry.yarnpkg.com/lite-react-ui/-/lite-react-ui-0.3.1.tgz#6641e4503512fa3b03c0b3b900f9a352527374c4"
-  integrity sha512-sBIj4s9N/4Yv01+ZUaABeZLdyUdSavt2TKrtMjYOvLhP+/sfltu+XsifDW1jQlyzWLfv0Yb8QbM/9JfARw+vSg==
+  resolved "git://github.com/john-raymon/lite-react-UI-components.git#05812baef99588c93b4ea98826a35fac7aaa1cc3"
   dependencies:
     concurrently "^6.2.0"
     lite-react-ui "^0.2.6"

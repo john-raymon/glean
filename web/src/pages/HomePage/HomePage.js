@@ -20,6 +20,9 @@ const HomePage = () => {
             </p>
             <form className="max-w-[75rem] flex items-center w-[70%] mx-auto font-[Urbanist] space-x-[1rem]">
               <TextField
+                name="email"
+                label="Email"
+                inputClassName="!bg-white !bg-opacity-[0.8]"
                 className="!border-black !flex-1"
                 placeholder="What's your email address?"
               />
@@ -56,7 +59,7 @@ const HomePage = () => {
               <div className="flex justify-between flex-col gradient-background-yellow self-stretch w-full px-[5rem] py-[3.75rem]">
                 <div className="space-y-[0.5rem]">
                   <h4 className="font-3xl-semibold text-[#9818D6]">
-                    Learn about a company’s tech interview process before
+                    Learn about a company&apos;s tech interview process before
                     commiting to interview.
                   </h4>
                   <p className="font-3xl-medium text-[#293241]">
