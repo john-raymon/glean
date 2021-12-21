@@ -35,31 +35,35 @@ const HomePage = () => {
       </section>
       <section>
         <div className="w-full mx-auto">
-          <ul className="flex w-full list-none text-center">
-            <li className="w-[50%] h-[auto] py-[1.25rem] pl-[1.25rem] pr-[0.625rem]">
-              <div className="gradient-background-purple h-full w-full px-[5rem] py-[3.75rem] space-y-[0.5rem]">
-                <h4 className="font-3xl-semibold text-[#FF5151]">
-                  Find companies with interview processes you prefer.
-                </h4>
-                <p className="font-3xl-medium text-[#293241]">
-                  Use Glean to find a company with a tech interview process that
-                  focuses on your strengths.
-                </p>
+          <ul className="flex w-full items-stretch list-none text-center">
+            <li className="flex w-[50%] h-[auto] py-[1.25rem] pl-[1.25rem] pr-[0.625rem]">
+              <div className="flex flex-col justify-between gradient-background-purple self-stretch w-full px-[5rem] py-[3.75rem]">
+                <div className="space-y-[0.5rem]">
+                  <h4 className="font-3xl-semibold text-[#FF5151]">
+                    Find companies with interview processes you prefer.
+                  </h4>
+                  <p className="font-3xl-medium text-[#293241]">
+                    Use Glean to find a company with a tech interview process
+                    that focuses on your strengths.
+                  </p>
+                </div>
                 <div className="w-full">
                   <img className="w-[70%]" src="/glean-image.png" alt="Glean" />
                 </div>
               </div>
             </li>
-            <li className="w-[50%] h-[auto] py-[1.25rem] pr-[1.25rem] pl-[0.625rem]">
-              <div className="gradient-background-yellow h-full w-full px-[5rem] py-[3.75rem] space-y-[0.5rem]">
-                <h4 className="font-3xl-semibold text-[#9818D6]">
-                  Learn about a company’s tech interview process before
-                  commiting to interview.
-                </h4>
-                <p className="font-3xl-medium text-[#293241]">
-                  Filter out companies with exhausting & long interview
-                  processes ahead of time, before applying.
-                </p>
+            <li className="flex w-[50%] h-[auto] py-[1.25rem] pr-[1.25rem] pl-[0.625rem]">
+              <div className="flex justify-between flex-col gradient-background-yellow self-stretch w-full px-[5rem] py-[3.75rem]">
+                <div className="space-y-[0.5rem]">
+                  <h4 className="font-3xl-semibold text-[#9818D6]">
+                    Learn about a company’s tech interview process before
+                    commiting to interview.
+                  </h4>
+                  <p className="font-3xl-medium text-[#293241]">
+                    Filter out companies with exhausting & long interview
+                    processes ahead of time, before applying.
+                  </p>
+                </div>
                 <div className="w-full">
                   <img
                     className="w-[70%] float-right"
