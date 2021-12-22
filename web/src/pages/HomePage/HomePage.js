@@ -23,7 +23,7 @@ const HomePage = () => {
                 name="email"
                 label="Email"
                 inputClassName="!bg-white !bg-opacity-[0.8]"
-                className="!border-black !flex-1"
+                className="!flex-1"
                 placeholder="What's your email address?"
               />
               <Button
