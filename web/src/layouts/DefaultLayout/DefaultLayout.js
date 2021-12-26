@@ -25,7 +25,7 @@ const DefaultLayout = ({ children }) => {
       <main className="mx-auto max-w-[160rem] min-h-[calc(100vh-24.75rem)] md:min-h-[calc(100vh-18rem)] bg-white -mt-[6.4375rem]">
         {children}
       </main>
-      <footer className="w-full px-[7.5rem] py-[2rem] md:py-[5rem] bg-black">
+      <footer className="w-full px-[4.5rem] md:px-[7.5rem] py-[2rem] md:py-[5rem] bg-black">
         <div className="flex flex-col md:flex-row justify-between w-full space-y-6 md:space-y-0 max-w-[75rem] mx-auto">
           <div className="mt-[2rem] md:mt-0 order-2 md:order-1 justify-between flex flex-col text-white">
             <ul className="flex w-full text-center flex-col md:flex-row md:space-x-4">
@@ -49,7 +49,7 @@ const DefaultLayout = ({ children }) => {
               <div>
                 <FooterLogo />
               </div>
-              <p className="text-white text-sm">
+              <p className="text-white text-sm text-center">
                 Copyright © 2021 | All rights reserved.
               </p>
             </div>

@@ -4,7 +4,7 @@ import { logger } from 'src/lib/logger'
 import crypto from 'crypto'
 
 mailchimpClient.setConfig({
-  apiKey: 'a265880a04a0e0bac56af24b9934e168-us20',
+  apiKey: process.env.MAILCHIMP_API_KEY,
   server: 'us20',
 })
 
