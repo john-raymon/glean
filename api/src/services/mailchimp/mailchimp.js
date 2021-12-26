@@ -1,7 +1,7 @@
 import { validate } from '@redwoodjs/api'
 import mailchimpClient from '@mailchimp/mailchimp_marketing'
 import { logger } from 'src/lib/logger'
-import crypto from 'crypto'
+import md5 from 'md5'
 
 mailchimpClient.setConfig({
   apiKey: process.env.MAILCHIMP_API_KEY,
@@ -12,10 +12,7 @@ export const subscribeToNewsletter = async (input) => {
   validate(input.email, 'Email', {
     email: true,
   })
-  const subscriberHash = crypto
-    .createHash('md5')
-    .update(input.email)
-    .digest('hex')
+  const subscriberHash = md5(input.email.toLowerCase())
   const response = await mailchimpClient.lists
     .addListMember('dbbe73e4e3', {
       email_address: input.email,
