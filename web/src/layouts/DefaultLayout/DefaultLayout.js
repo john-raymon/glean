@@ -1,4 +1,4 @@
-import Logo from 'src/styles/svgs/logo.svg'
+import Logo from 'src/styles/svgs/Logo.svg'
 import { Button } from 'lite-react-ui'
 import FooterLogo from 'src/styles/svgs/FooterLogo.svg'
 

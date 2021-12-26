@@ -35,7 +35,7 @@ export const handler = async (event) => {
       headers: {
         'Content-Type': 'application/json',
       },
-      body: error,
+      body: JSON.stringify(error),
     }
   }
 }

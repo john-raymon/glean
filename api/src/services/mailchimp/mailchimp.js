@@ -10,13 +10,12 @@ mailchimpClient.setConfig({
 
 export const subscribeToNewsletter = async (input) => {
   validate(input.email, 'Email', {
-    format: /\S+@\S+\.\S+/,
+    email: true,
   })
   const subscriberHash = crypto
     .createHash('md5')
     .update(input.email)
     .digest('hex')
-  let responseType = 'new subscribe type'
   const response = await mailchimpClient.lists
     .addListMember('dbbe73e4e3', {
       email_address: input.email,
@@ -32,7 +31,6 @@ export const subscribeToNewsletter = async (input) => {
           subscriberHash
         )
         if (response.status !== 'subscribed') {
-          responseType = 'inner resubscribe type'
           const response = await mailchimpClient.lists.setListMember(
             'dbbe73e4e3',
             subscriberHash,
@@ -55,6 +53,5 @@ export const subscribeToNewsletter = async (input) => {
     })
   return {
     success: response.status === 'subscribed' ? true : false,
-    miscs: 'this is a test',
   }
 }

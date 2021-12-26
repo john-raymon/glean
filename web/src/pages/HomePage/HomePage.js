@@ -9,7 +9,7 @@ const HomePage = () => {
   const onSubmit = (e) => {
     e.preventDefault()
     console.log(email)
-    fetch(`/.redwood/functions/subscribeToNewsletter?email=${email}`, {
+    fetch(`${window.RWJS_API_URL}/subscribeToNewsletter?email=${email}`, {
       method: 'POST',
     })
       .then((response) => response.json())
@@ -60,6 +60,7 @@ const HomePage = () => {
               <Button
                 className="!bg-[#293241] !text-[1rem] !rounded-[0.875rem] !leading-[1.1875rem] !py-[1rem]"
                 buttonType="secondary"
+                disabled={email.trim() === ''}
               >
                 Subscribe
               </Button>
