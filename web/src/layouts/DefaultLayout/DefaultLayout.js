@@ -5,24 +5,24 @@ import FooterLogo from 'src/styles/svgs/FooterLogo.svg'
 const DefaultLayout = ({ children }) => {
   return (
     <>
-      <header className="w-full flex justify-center px-[7.5rem] pt-[3rem] bg-transparent">
+      <header className="mx-auto max-w-[160rem] w-full flex justify-center px-[1.75rem] md:px-[7.5rem] pt-[3rem] bg-transparent">
         <nav className="w-full max-w-[75rem] flex items-center justify-between">
           <div>
             <Logo />
           </div>
           <ul className="list-none">
-            <li>
+            {/* <li>
               <Button
                 className="!bg-[#293241] !text-[1rem] !rounded-[0.875rem] !leading-[1.1875rem] !py-[1rem]"
                 buttonType="secondary"
               >
                 Post your company&apos;s tech. interview process
               </Button>
-            </li>
+            </li> */}
           </ul>
         </nav>
       </header>
-      <main className="min-h-[calc(100vh-24.75rem)] md:min-h-[calc(100vh-20.25rem)] bg-white -mt-[6.4375rem]">
+      <main className="mx-auto max-w-[160rem] min-h-[calc(100vh-24.75rem)] md:min-h-[calc(100vh-18rem)] bg-white -mt-[6.4375rem]">
         {children}
       </main>
       <footer className="w-full px-[7.5rem] py-[2rem] md:py-[5rem] bg-black">
@@ -32,20 +32,20 @@ const DefaultLayout = ({ children }) => {
               <li>
                 <a>About</a>
               </li>
+              <li>
+                <a>Contact</a>
+              </li>
               {/* <li>
                 <a>Terms of Service</a>
               </li>
               <li>
                 <a>Privacy Policy</a>
-              </li> */}
-              <li>
-                <a>Contact</a>
               </li>
               <li>
                 <a>Blog</a>
-              </li>
+              </li> */}
             </ul>
-            <div className="mt-[2rem] md:mt-[5rem] flex flex-col self-center md:items-start items-center space-x-6 md:space-x-0 space-y-2">
+            <div className="mt-[2rem] md:mt-[5rem] flex flex-col self-center md:items-start items-center md:space-x-0 space-y-2">
               <div>
                 <FooterLogo />
               </div>

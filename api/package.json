@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
+    "@mailchimp/mailchimp_marketing": "^3.0.72",
     "@redwoodjs/api": "0.40.0",
     "@redwoodjs/graphql-server": "0.40.0"
   }

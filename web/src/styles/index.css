@@ -10,12 +10,16 @@
  @import "tailwindcss/components";
  @import "tailwindcss/utilities";
 
+ * {
+  @apply font-[Urbanist];
+ }
+
  body {
   font-family: lato, sans-serif;
   -webkit-font-smoothing: antialiased;
   font-smooth: always;
   -moz-osx-font-smoothing: grayscale;
-}
+  }
 
  @import "typography";
  @import "globals";
