@@ -5,10 +5,11 @@ import { TextField, Button } from 'lite-react-ui'
 const HomePage = () => {
   const [email, setEmail] = useState('')
   const [emailSubmitted, setEmailSubmitted] = useState(false)
-
+  const [loading, setLoading] = useState(false)
   const onSubmit = (e) => {
     e.preventDefault()
     console.log(email)
+    setLoading(true)
     fetch(`${window.RWJS_API_URL}/subscribeToNewsletter?email=${email}`, {
       method: 'POST',
     })
@@ -28,6 +29,9 @@ const HomePage = () => {
         }
         setEmail('')
         console.log(emailSubmitted)
+      })
+      .finally(() => {
+        setLoading(false)
       })
   }
   return (
@@ -62,7 +66,7 @@ const HomePage = () => {
               <Button
                 className="!bg-[#293241] !text-[1rem] !rounded-[0.875rem] !leading-[1.1875rem] !py-[1rem]"
                 buttonType="secondary"
-                disabled={email.trim() === ''}
+                disabled={email.trim() === '' || loading}
               >
                 Subscribe
               </Button>
