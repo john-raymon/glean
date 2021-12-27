@@ -20,11 +20,13 @@ const HomePage = () => {
           alert(
             "Thank you for subscribing! We're looking forward to sending you tech. companies hiring along with their interview processes."
           )
+          setEmailSubmitted(true)
+        } else if (res.name && res.name === 'EmailValidationError') {
+          alert('Please enter a valid email address.')
         } else {
           alert("We're having trouble subscribing you. Please try again later.")
         }
         setEmail('')
-        setEmailSubmitted(true)
         console.log(emailSubmitted)
       })
   }
