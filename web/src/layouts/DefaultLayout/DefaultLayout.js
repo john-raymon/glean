@@ -22,7 +22,7 @@ const DefaultLayout = ({ children }) => {
           </ul>
         </nav>
       </header>
-      <main className="mx-auto max-w-[160rem] min-h-[calc(100vh-24.75rem)] md:min-h-[calc(100vh-18rem)] bg-white -mt-[6.4375rem]">
+      <main className="mx-auto max-w-[160rem] min-h-[calc(100vh-24.75rem)] md:min-h-[calc(100vh-18rem)] bg-[#EDEDED] -mt-[6.4375rem]">
         {children}
       </main>
       <footer className="w-full px-[4.5rem] md:px-[7.5rem] py-[2rem] md:py-[5rem] bg-black">

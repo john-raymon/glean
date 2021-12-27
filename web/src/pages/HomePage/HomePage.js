@@ -98,7 +98,7 @@ const HomePage = () => {
                 <div className="space-y-[0.5rem]">
                   <h4 className="font-3xl-semibold text-[#9818D6]">
                     Learn about a company&apos;s tech interview process before
-                    commiting to interview.
+                    commiting to it.
                   </h4>
                   <p className="font-3xl-medium text-[#293241]">
                     Filter out companies with exhausting & long interview
