@@ -13,7 +13,7 @@ import DefaultLayout from 'src/layouts/DefaultLayout'
 const Routes = () => {
   return (
     <Router>
-      <Set wrap={DefaultLayout}>
+      <Set wrap={DefaultLayout} prerender>
         <Route path="/" page={HomePage} name="home" />
         <Route notfound page={NotFoundPage} />
       </Set>
